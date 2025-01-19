@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    max-width: 1440px;
+    font-family: "Poppins", serif;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* shared part style in css */
+.d-flex{
+    display: flex;
+}
+
+.common-description{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+.btn-promary{
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 41px;
+    transition: all linear .3s;
+}
+
+.btn-promary:hover{
+   border: 1px solid #E02C6D;
+   background-color: #FFFFFF;
+   color: #E02C6D;
+}
+
+main > section{
+   margin: 50px 120px;
+}
+/* navigation part in css  */
+.navigation{
+    margin: 50px 120px;
+    justify-content: space-between;
+}
+
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+.nav-links .nav-item{
+    list-style: none;
+    padding-right: 30px;
+
+}
+
+.nav-links .nav-item .nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+/* hero part style in css */
+.hero{
+    margin: 50px 120px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero_contain{
+    max-width: 550px;
+}
+
+.hero_title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+.hero-description{
+    margin-bottom: 16px;
+}
+.hero-image{
+    width: 440px;
+    height: 414px;
+    position: relative;
+}
+
+.hero-image img{
+    position: absolute;
+    width: 100%;
+}
+
+/* brand image part style in css */
+.brand-image{
+   justify-content:center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 50px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+
+/* mobile device responsive part  */
+@media screen and (max-width: 576px){
+    .navigation{
+        flex-direction: column;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+     
+    }
+
+    .hero{ 
+        flex-direction: column-reverse;
+        margin: 20px 40px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero_contain{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_title{
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-image{
+        width: 257px;
+        height: 257px;
+    }
+
+    main > section{
+        margin: 0;
+    }
+
+     .brand-image{
+        gap: 30px;
+     }
+
+     .brand-image img{
+             width: 17%;
+     }
+
+}
+
+ /* tablet device responsive part in css */
+ @media screen and (min-width: 576px) and (max-width: 992px) {
+    .navigation{
+        flex-direction: column;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;   
+    }
+
+    .hero{ 
+        flex-direction: column;
+        margin: 20px 40px;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .hero_contain{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .hero-image{
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-image img{
+        width: 100%;
+
+    }
+
+    main > section{
+        margin: 20px 50px;
+    }
+ }
