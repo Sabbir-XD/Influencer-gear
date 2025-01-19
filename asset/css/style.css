@@ -119,6 +119,7 @@ main > section{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-content: center;
+    overflow: hidden;
 }
 .popular-box{
     width: 329px;
@@ -185,7 +186,88 @@ main > section{
     text-decoration: none;
 }
 
+/* feature part in css style */
+.feature-container{
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+}
 
+
+.feature-contain{
+   max-width: 624px;
+}
+
+.feature_title{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 10px;
+}
+
+.feature-description{
+    margin-bottom: 10px;
+}
+
+.feature-btn{
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+.feature-btn:hover{
+    border: 1px solid #E02C6D;
+    background-color: #FFFFFF;
+    color: #E02C6D;
+}
+
+/* footer part style in css */
+.footer-container{
+    background-color: #000000;
+    margin-top: 100px;
+}
+
+.footer-contain{
+   padding: 50px 0;
+   justify-items: center;
+   text-align: center;
+
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.footer-copy{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #D9DBE1;
+    margin-bottom: 20px;
+}
+
+.icon-link li{
+    margin: 0 8px;
+}
+
+.icon-link li .social-link{
+    background-color: rgba(55, 55, 55, 1);
+    color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
 /* mobile device responsive part  */
 @media screen and (max-width: 576px){
@@ -201,14 +283,16 @@ main > section{
      
     }
 
-    .hero{ 
+    .hero,
+    .feature-container{ 
         flex-direction: column-reverse;
         margin: 20px 40px;
         align-items: center;
         gap: 30px;
     }
 
-    .hero_contain{
+    .hero_contain,
+    .feature-contain{
         width: 100%;
         text-align: center;
     }
@@ -255,14 +339,16 @@ main > section{
         flex-direction: column;   
     }
 
-    .hero{ 
+    .hero,
+    .feature-container{ 
         flex-direction: column;
         margin: 20px 40px;
         align-items: center;
         gap: 50px;
     }
 
-    .hero_contain{
+    .hero_contain,
+    .feature-contain{
         width: 100%;
         text-align: center;
     }
